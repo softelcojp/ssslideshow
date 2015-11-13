@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ssSlideShow - demo</title>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="ssslideshow.js"></script>
+<script>
+$(function(){
+	$("#ssss").ssSlideShow();
+	$(".ssss").ssSlideShow({w:640,h:100,d:1000});
+	$(".ssss2").ssSlideShow({w:200,h:150,d:1000});
+});
+</script>
+</head>
+<body style="margin:0; padding:0; background:#f6f6f6;">
+
+	<h1>ssSlideShow</h1>
+
+	<div id="ssss">
+		<div><img src="http://placehold.jp/640x480.png?text=01" alt="01"></div>
+		<div><img src="http://placehold.jp/640x480.png?text=02" alt="02"></div>
+		<div style="width:640px; height:480px;background:#999999;">
+			<div style="padding:10px;">
+				<h2>画像だけではありません</h2>
+				<p>画像のスライドショーの他、<br>文字や通常のHTML（div要素）もスライドショーできます。</p>
+				<p style="float:right;"><img src="http://placehold.jp/320x240.png?text=03" alt="03"></p>
+			</div>
+		</div>
+		<div>
+			<div style="width:640px; height:480px; margin:0 0 -80px 0; padding:0;"><img src="http://placehold.jp/640x480.png?text=04" alt="04"></div>
+			<div style="height:80px; background:#666666; color:#ffffff; opacity:0.7;">
+				<p style="padding:10px;">画像+文字で紙芝居もきっとできます。</p>
+			</div>
+		</div>
+		<div>
+			<div style="width:640px; height:480px; margin:0; padding:0;"><img src="http://placehold.jp/640x480.png?text=05" alt="05"></div>
+			<div style="position:relative; top:-480px; height:100px; background:#003366; color:#ffffff; opacity:0.7; margin:0; padding:0;">
+				<p style="margin:0; padding:10px;">
+					字幕等はHTML+CSSを工夫して追加してください。<br>
+					字幕等はHTML+CSSを工夫して追加してください。<br>
+					字幕等はHTML+CSSを工夫して追加してください。<br>
+				</p>
+			</div>
+		</div>
+		<div><img src="http://placehold.jp/640x480.png?text=06" alt="06"></div>
+		<div><img src="http://placehold.jp/640x480.png?text=07" alt="07"></div>
+		<div><img src="http://placehold.jp/640x480.png?text=08" alt="08"></div>
+		<div><img src="http://placehold.jp/640x480.png?text=09" alt="09"></div>
+		<div><img src="http://placehold.jp/640x480.png?text=10" alt="10"></div>
+	</div>
+
+	<div style="max-width:800px; margin:40px auto; padding:.5em; border-radius:.5em; background:#ffffff;">
+		<p>"#ssss > div" slides.</p>
+		<pre style="padding:.5em; border:1px solid #ccc; border-radius:.5em; background:#eeeeee; font-size:80%;">&lt;script&gt;
+$(function(){
+	$(&quot;#ssss&quot;).ssSlideShow();
+});
+&lt;/script&gt;
+&lt;div id=&quot;ssss&quot;&gt;
+	&lt;div&gt;&lt;img src=&quot;http://placehold.jp/640x480.png?text=01&quot; alt=&quot;01&quot;&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;img src=&quot;http://placehold.jp/640x480.png?text=02&quot; alt=&quot;02&quot;&gt;&lt;/div&gt;
+	&lt;div style=&quot;width:640px; height:480px;background:#999999;&quot;&gt;
+		&lt;div style=&quot;padding:10px;&quot;&gt;
+			&lt;h2&gt;画像だけではありません&lt;/h2&gt;
+			&lt;p&gt;画像のスライドショーの他、&lt;br&gt;文字や通常のHTML（div要素）もスライドショーできます。&lt;/p&gt;
+			&lt;p style=&quot;float:right;&quot;&gt;&lt;img src=&quot;http://placehold.jp/320x240.png?text=03&quot; alt=&quot;03&quot;&gt;&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div&gt;
+		&lt;div style=&quot;width:640px; height:480px; margin:0 0 -80px 0; padding:0;&quot;&gt;&lt;img src=&quot;http://placehold.jp/640x480.png?text=04&quot; alt=&quot;04&quot;&gt;&lt;/div&gt;
+		&lt;div style=&quot;height:80px; background:#666666; color:#ffffff; opacity:0.7;&quot;&gt;
+			&lt;p style=&quot;padding:10px;&quot;&gt;画像+文字で紙芝居もきっとできます。&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div&gt;
+		&lt;div style=&quot;width:640px; height:480px; margin:0; padding:0;&quot;&gt;&lt;img src=&quot;http://placehold.jp/640x480.png?text=05&quot; alt=&quot;05&quot;&gt;&lt;/div&gt;
+		&lt;div style=&quot;position:relative; top:-480px; height:100px; background:#003366; color:#ffffff; opacity:0.7; margin:0; padding:0;&quot;&gt;
+			&lt;p style=&quot;margin:0; padding:10px;&quot;&gt;
+				字幕等はHTML+CSSを工夫して追加してください。&lt;br&gt;
+				字幕等はHTML+CSSを工夫して追加してください。&lt;br&gt;
+				字幕等はHTML+CSSを工夫して追加してください。&lt;br&gt;
+			&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div&gt;&lt;img src=&quot;http://placehold.jp/640x480.png?text=06&quot; alt=&quot;06&quot;&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;img src=&quot;http://placehold.jp/640x480.png?text=07&quot; alt=&quot;07&quot;&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;img src=&quot;http://placehold.jp/640x480.png?text=08&quot; alt=&quot;08&quot;&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;img src=&quot;http://placehold.jp/640x480.png?text=09&quot; alt=&quot;09&quot;&gt;&lt;/div&gt;
+	&lt;div&gt;&lt;img src=&quot;http://placehold.jp/640x480.png?text=10&quot; alt=&quot;10&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+	</div>
+
+	<div class="ssss" style="margin-bottom:1em;">
+		<div><img src="http://placehold.jp/640x100.png?text=01" alt="01"></div>
+		<div><img src="http://placehold.jp/640x100.png?text=02" alt="02"></div>
+		<div><img src="http://placehold.jp/640x100.png?text=03" alt="03"></div>
+		<div><img src="http://placehold.jp/640x100.png?text=04" alt="04"></div>
+		<div><img src="http://placehold.jp/640x100.png?text=05" alt="05"></div>
+	</div>
+
+	<div class="ssss" style="margin-bottom:1em;">
+		<div><img src="http://placehold.jp/640x100.png?text=06" alt="06"></div>
+		<div><img src="http://placehold.jp/640x100.png?text=07" alt="07"></div>
+		<div><img src="http://placehold.jp/640x100.png?text=08" alt="08"></div>
+		<div><img src="http://placehold.jp/640x100.png?text=09" alt="09"></div>
+		<div><img src="http://placehold.jp/640x100.png?text=10" alt="10"></div>
+	</div>
+
+	<div class="ssss" style="margin-bottom:1em;">
+		<div><img src="http://placehold.jp/640x100.png?text=11" alt="11"></div>
+		<div><img src="http://placehold.jp/640x100.png?text=12" alt="12"></div>
+		<div><img src="http://placehold.jp/640x100.png?text=13" alt="13"></div>
+		<div><img src="http://placehold.jp/640x100.png?text=14" alt="14"></div>
+		<div><img src="http://placehold.jp/640x100.png?text=15" alt="15"></div>
+	</div>
+
+	<div class="ssss2" style="margin-bottom:1em;">
+		<div><img src="http://placehold.jp/200x150.png?text=01" alt="01"></div>
+		<div><img src="http://placehold.jp/200x150.png?text=02" alt="02"></div>
+		<div><img src="http://placehold.jp/200x150.png?text=03" alt="03"></div>
+		<div><img src="http://placehold.jp/200x150.png?text=04" alt="04"></div>
+		<div><img src="http://placehold.jp/200x150.png?text=05" alt="05"></div>
+		<div><img src="http://placehold.jp/200x150.png?text=06" alt="06"></div>
+		<div><img src="http://placehold.jp/200x150.png?text=07" alt="07"></div>
+		<div><img src="http://placehold.jp/200x150.png?text=08" alt="08"></div>
+		<div><img src="http://placehold.jp/200x150.png?text=09" alt="09"></div>
+		<div><img src="http://placehold.jp/200x150.png?text=10" alt="10"></div>
+	</div>
+</body>
+</html>
